@@ -1,45 +1,45 @@
 # udemy_go_study
 
 ## ファイル構成
-- lession1: 変数
-- lession2: 定数
-- lession3: 型
-- lession4: 型変換
-- lession5: 定数
+- section1: 変数
+- section2: 定数
+- section3: 型
+- section4: 型変換
+- section5: 定数
 
-## まとめ (Lesson 1-5)
+## まとめ (section 1-5)
 
-1. 変数 (Lesson 1)
+1. 変数 (section 1)
    - var キーワードによる変数宣言
    - 暗黙的な型宣言 (:=)
    - スコープとライフタイム
    - ゼロ値の概念
 
-2. 定数 (Lesson 2)
+2. 定数 (section 2)
    - const キーワードによる定数宣言
    - 型付き・型なし定数
    - 定数のグループ化
    - イミュータブルな値
 
-3. 型 (Lesson 3)
+3. 型 (section 3)
    - 基本型（int, float64, string, bool等）
    - 配列とスライス
    - マップ
    - 構造体
 
-4. 型変換 (Lesson 4)
+4. 型変換 (section 4)
    - 数値型間の変換
    - strconv パッケージの利用
    - バイトスライスと文字列の変換
    - interface{} 型と型アサーション
 
-5. 定数の詳細 (Lesson 5)
+5. 定数の詳細 (section 5)
    - 定数の連続宣言
    - iota による連番生成
    - 定数の計算とコンパイル時評価
    - 型なし定数の柔軟性
 
-6. 演算子 (Lesson 6)
+6. 演算子 (section 6)
    - 算術演算子 (+, -, *, /, %)
    - インクリメント・デクリメント (++, --)
    - 代入演算子 (+=, -=, *=, /=, %=)
