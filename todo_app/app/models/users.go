@@ -7,11 +7,12 @@ import (
 
 type User struct {
 	Id        int
-	Uuid      string
+	UUid      string
 	Name      string
 	Email     string
 	PassWord  string
 	CreatedAt time.Time
+	Todos     []Todo
 }
 
 type Session struct {
@@ -45,13 +46,12 @@ func (u *User) CreateUser() (err error) {
 
 func GetUser(id int) (user User, err error) {
 	user = User{}
-	cmd := `select * from users where id = ?`
+	cmd := `select id, uuid, name, email, created_at from users where id = ?`
 	err = Db.QueryRow(cmd, id).Scan(
 		&user.Id,
-		&user.Uuid,
+		&user.UUid,
 		&user.Name,
 		&user.Email,
-		&user.PassWord,
 		&user.CreatedAt,
 	)
 	return user, err
@@ -77,36 +77,35 @@ func (u *User) DeleteUser() (err error) {
 
 func GetUserByEmail(email string) (user User, err error) {
 	user = User{}
-	cmd := `select id, uuid, name, email, password, created_at
-	from users where email = ?`
+	cmd := `select id, uuid, name, email, password, created_at from users where email = ?`
 	err = Db.QueryRow(cmd, email).Scan(
 		&user.Id,
-		&user.Uuid,
+		&user.UUid,
 		&user.Name,
 		&user.Email,
 		&user.PassWord,
 		&user.CreatedAt,
 	)
-
 	return user, err
 }
 
 func (u *User) CreateSession() (session Session, err error) {
 	session = Session{}
+	uuid := createUUID()
 
 	cmd1 := `insert into sessions (
-        uuid,
-        email,
-        user_id,
-        created_at) values (?, ?, ?, ?)`
-	_, err = Db.Exec(cmd1, createUUID(), u.Email, u.Id, time.Now())
+		uuid,
+		email,
+		user_id,
+		created_at) values (?, ?, ?, ?)`
+	_, err = Db.Exec(cmd1, uuid, u.Email, u.Id, time.Now())
 	if err != nil {
 		log.Println(err)
 	}
 
 	cmd2 := `select id, uuid, email, user_id, created_at from sessions
-    where email = ? and user_id = ?`
-	err = Db.QueryRow(cmd2, u.Email, u.Id).Scan( // 同じUUIDを使用
+	where uuid = ?`
+	err = Db.QueryRow(cmd2, uuid).Scan(
 		&session.Id,
 		&session.UUid,
 		&session.Email,
@@ -135,4 +134,26 @@ func (s *Session) CheckSession() (valid bool, err error) {
 		valid = true
 	}
 	return valid, err
+}
+
+func (s *Session) DeleteSessionByUUID() (err error) {
+	cmd := `delete from sessions where uuid = ?`
+	_, err = Db.Exec(cmd, s.UUid)
+	if err != nil {
+		log.Fatalln(err)
+	}
+	return err
+}
+
+func (s *Session) GetUserBySession() (user User, err error) {
+	user = User{}
+	cmd := `select id, uuid, name, email, created_at from users where id = ?`
+	err = Db.QueryRow(cmd, s.UserId).Scan(
+		&user.Id,
+		&user.UUid,
+		&user.Name,
+		&user.Email,
+		&user.CreatedAt,
+	)
+	return user, err
 }

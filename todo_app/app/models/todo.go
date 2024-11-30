@@ -27,7 +27,7 @@ func (t *Todo) CreateTodo() (err error) {
 
 func GetTodo(id int) (todo Todo, err error) {
 	todo = Todo{}
-	cmd := `select * from todos where id = ?`
+	cmd := `select id, content, user_id, created_at from todos where id = ?`
 	err = Db.QueryRow(cmd, id).Scan(
 		&todo.Id,
 		&todo.Content,
@@ -38,7 +38,7 @@ func GetTodo(id int) (todo Todo, err error) {
 }
 
 func GetTodos() (todos []Todo, err error) {
-	cmd := `select * from todos`
+	cmd := `select id, content, user_id, created_at from todos`
 	rows, err := Db.Query(cmd)
 	if err != nil {
 		log.Fatalln(err)
@@ -51,7 +51,10 @@ func GetTodos() (todos []Todo, err error) {
 			&todo.UserId,
 			&todo.CreatedAt,
 		)
-		// todosスライスに取得したtodoを追加する
+		if err != nil {
+			log.Println(err)
+			continue
+		}
 		todos = append(todos, todo)
 	}
 	rows.Close()
@@ -59,7 +62,7 @@ func GetTodos() (todos []Todo, err error) {
 }
 
 func (u *User) GetTodosByUser() (todos []Todo, err error) {
-	cmd := `select * from todos where user_id = ?`
+	cmd := `select id, content, user_id, created_at from todos where user_id = ?`
 	rows, err := Db.Query(cmd, u.Id)
 	if err != nil {
 		log.Fatalln(err)

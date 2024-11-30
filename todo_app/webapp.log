@@ -142,3 +142,84 @@
 2024/11/29 16:00:16 base.go:66: sessionsテーブルの作成に成功しました
 2024/11/29 16:13:16 base.go:52: todosテーブルの作成に成功しました
 2024/11/29 16:13:16 base.go:66: sessionsテーブルの作成に成功しました
+2024/11/30 15:38:48 base.go:50: Binary was compiled with 'CGO_ENABLED=0', go-sqlite3 requires cgo to work. This is a stub
+2024/11/30 15:57:28 base.go:52: todosテーブルの作成に成功しました
+2024/11/30 15:57:28 base.go:66: sessionsテーブルの作成に成功しました
+2024/11/30 16:09:35 base.go:52: todosテーブルの作成に成功しました
+2024/11/30 16:09:35 base.go:66: sessionsテーブルの作成に成功しました
+2024/11/30 16:32:13 base.go:52: todosテーブルの作成に成功しました
+2024/11/30 16:32:13 base.go:66: sessionsテーブルの作成に成功しました
+2024/11/30 16:42:10 base.go:52: todosテーブルの作成に成功しました
+2024/11/30 16:42:10 base.go:66: sessionsテーブルの作成に成功しました
+2024/11/30 16:42:17 route_main.go:26: sql: expected 5 destination arguments in Scan, not 6
+2024/11/30 16:42:17 route_main.go:26: sql: expected 5 destination arguments in Scan, not 6
+2024/11/30 16:42:26 route_main.go:26: sql: expected 5 destination arguments in Scan, not 6
+2024/11/30 16:42:26 route_main.go:26: sql: expected 5 destination arguments in Scan, not 6
+2024/11/30 16:43:08 route_main.go:26: sql: expected 5 destination arguments in Scan, not 6
+2024/11/30 16:43:09 route_main.go:26: sql: expected 5 destination arguments in Scan, not 6
+2024/11/30 16:43:10 route_main.go:26: sql: expected 5 destination arguments in Scan, not 6
+2024/11/30 16:43:11 route_main.go:55: sql: expected 5 destination arguments in Scan, not 6
+2024/11/30 16:43:11 route_main.go:26: sql: expected 5 destination arguments in Scan, not 6
+2024/11/30 16:43:11 route_main.go:26: sql: expected 5 destination arguments in Scan, not 6
+2024/11/30 16:43:15 route_main.go:26: sql: expected 5 destination arguments in Scan, not 6
+2024/11/30 16:43:16 route_main.go:55: sql: expected 5 destination arguments in Scan, not 6
+2024/11/30 16:43:16 route_main.go:26: sql: expected 5 destination arguments in Scan, not 6
+2024/11/30 16:43:16 route_main.go:26: sql: expected 5 destination arguments in Scan, not 6
+2024/11/30 16:43:24 route_main.go:26: sql: expected 5 destination arguments in Scan, not 6
+2024/11/30 16:43:25 route_main.go:26: sql: expected 5 destination arguments in Scan, not 6
+2024/11/30 17:07:25 base.go:52: todosテーブルの作成に成功しました
+2024/11/30 17:07:25 base.go:66: sessionsテーブルの作成に成功しました
+2024/11/30 17:07:55 route_main.go:26: sql: expected 5 destination arguments in Scan, not 6
+2024/11/30 17:07:56 route_main.go:26: sql: expected 5 destination arguments in Scan, not 6
+2024/11/30 17:07:58 route_main.go:26: sql: expected 5 destination arguments in Scan, not 6
+2024/11/30 17:07:58 route_main.go:26: sql: expected 5 destination arguments in Scan, not 6
+2024/11/30 17:08:01 route_main.go:26: sql: expected 5 destination arguments in Scan, not 6
+2024/11/30 17:08:03 route_main.go:55: sql: expected 5 destination arguments in Scan, not 6
+2024/11/30 17:08:03 route_main.go:26: sql: expected 5 destination arguments in Scan, not 6
+2024/11/30 17:08:03 route_main.go:26: sql: expected 5 destination arguments in Scan, not 6
+2024/11/30 17:08:04 route_main.go:26: sql: expected 5 destination arguments in Scan, not 6
+2024/11/30 17:08:05 route_main.go:55: sql: expected 5 destination arguments in Scan, not 6
+2024/11/30 17:08:05 route_main.go:26: sql: expected 5 destination arguments in Scan, not 6
+2024/11/30 17:08:05 route_main.go:26: sql: expected 5 destination arguments in Scan, not 6
+2024/11/30 17:08:07 route_main.go:26: sql: expected 5 destination arguments in Scan, not 6
+2024/11/30 17:08:07 route_main.go:26: sql: expected 5 destination arguments in Scan, not 6
+2024/11/30 17:08:10 route_main.go:26: sql: expected 5 destination arguments in Scan, not 6
+2024/11/30 17:08:11 route_main.go:55: sql: expected 5 destination arguments in Scan, not 6
+2024/11/30 17:08:11 route_main.go:26: sql: expected 5 destination arguments in Scan, not 6
+2024/11/30 17:08:11 route_main.go:26: sql: expected 5 destination arguments in Scan, not 6
+2024/11/30 17:08:22 route_main.go:26: sql: expected 5 destination arguments in Scan, not 6
+2024/11/30 17:08:22 route_main.go:26: sql: expected 5 destination arguments in Scan, not 6
+2024/11/30 17:10:45 base.go:52: todosテーブルの作成に成功しました
+2024/11/30 17:10:45 base.go:66: sessionsテーブルの作成に成功しました
+2024/11/30 17:11:13 route_main.go:26: sql: expected 5 destination arguments in Scan, not 6
+2024/11/30 17:11:16 route_main.go:55: sql: expected 5 destination arguments in Scan, not 6
+2024/11/30 17:11:16 route_main.go:26: sql: expected 5 destination arguments in Scan, not 6
+2024/11/30 17:11:16 route_main.go:26: sql: expected 5 destination arguments in Scan, not 6
+2024/11/30 17:18:17 base.go:52: todosテーブルの作成に成功しました
+2024/11/30 17:18:17 base.go:66: sessionsテーブルの作成に成功しました
+2024/11/30 17:18:40 route_auth.go:51: sql: no rows in result set
+2024/11/30 17:18:43 route_auth.go:51: sql: no rows in result set
+2024/11/30 17:18:47 route_auth.go:51: sql: no rows in result set
+2024/11/30 17:18:55 route_main.go:26: sql: expected 5 destination arguments in Scan, not 6
+2024/11/30 17:18:55 route_main.go:26: sql: expected 5 destination arguments in Scan, not 6
+2024/11/30 17:18:56 route_main.go:26: sql: expected 5 destination arguments in Scan, not 6
+2024/11/30 17:18:58 route_main.go:55: sql: expected 5 destination arguments in Scan, not 6
+2024/11/30 17:18:58 route_main.go:26: sql: expected 5 destination arguments in Scan, not 6
+2024/11/30 17:18:58 route_main.go:26: sql: expected 5 destination arguments in Scan, not 6
+2024/11/30 17:18:59 route_main.go:26: sql: expected 5 destination arguments in Scan, not 6
+2024/11/30 17:19:01 route_main.go:55: sql: expected 5 destination arguments in Scan, not 6
+2024/11/30 17:19:01 route_main.go:26: sql: expected 5 destination arguments in Scan, not 6
+2024/11/30 17:19:01 route_main.go:26: sql: expected 5 destination arguments in Scan, not 6
+2024/11/30 17:19:02 route_main.go:26: sql: expected 5 destination arguments in Scan, not 6
+2024/11/30 17:19:03 route_main.go:55: sql: expected 5 destination arguments in Scan, not 6
+2024/11/30 17:19:03 route_main.go:26: sql: expected 5 destination arguments in Scan, not 6
+2024/11/30 17:19:03 route_main.go:26: sql: expected 5 destination arguments in Scan, not 6
+2024/11/30 17:19:04 route_main.go:26: sql: expected 5 destination arguments in Scan, not 6
+2024/11/30 17:19:06 route_main.go:55: sql: expected 5 destination arguments in Scan, not 6
+2024/11/30 17:19:06 route_main.go:26: sql: expected 5 destination arguments in Scan, not 6
+2024/11/30 17:19:06 route_main.go:26: sql: expected 5 destination arguments in Scan, not 6
+2024/11/30 17:20:31 base.go:52: todosテーブルの作成に成功しました
+2024/11/30 17:20:31 base.go:66: sessionsテーブルの作成に成功しました
+2024/11/30 17:29:15 base.go:52: todosテーブルの作成に成功しました
+2024/11/30 17:29:15 base.go:66: sessionsテーブルの作成に成功しました
+2024/11/30 17:29:43 route_auth.go:51: sql: no rows in result set
